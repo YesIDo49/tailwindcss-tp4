@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -12,17 +12,20 @@ module.exports = {
           100: "#E8F1FA",
           200: "#D9EAFD",
         },
+        "text" : "#080808",
         "light": "#F7F7F7",
         "dark": {
           100: "#414147",
           200: "#232225",
           300: "#282227",
-          400: "#171719",
+          400: "#141414",
         },
       },
       borderRadius: {
         'none': '0',
         'small': '10px',
+        'medium': '25px',
+        'big': '50px',
       },
       fontSize: {
         sm: '0.8rem',
